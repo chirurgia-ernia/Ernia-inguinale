@@ -51,7 +51,8 @@
     "@type": "Physician",
     "name": "Dott. Francesco Evola",
     "medicalSpecialty": "Surgical",
-    "description": "Dirigente Medico, Chirurgia Generale e d'Urgenza, Ospedale Maria Vittoria, Torino"
+    "description": "Dirigente Medico, Chirurgia Generale e d'Urgenza, Torino",
+    "email": "f.evola.surg@gmail.com"
   }
 }
 </script>
@@ -372,6 +373,36 @@
     .path .bar,.kicker .ln{transform:none !important;}
   }
 
+  .byline{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin-top:24px;padding-top:14px;border-top:1px solid rgba(169,184,217,.3);font-size:14.5px;color:#C9D3EE;max-width:680px;}
+  .byline b{color:#F7F9FF;font-weight:600;}
+  .byline .sep{color:#6F7FA8;}
+  @media (max-width:560px){ .byline .sep{display:none;} }
+  footer .ft-h{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:var(--navy);margin:0 0 8px;}
+  footer .ft-refs{list-style:none;margin:0;padding:0;}
+  footer .ft-refs li{padding:10px 0;border-top:1px solid var(--line);font-size:15px;color:var(--body);display:flex;flex-wrap:wrap;gap:4px 14px;justify-content:space-between;align-items:baseline;}
+  footer .ft-refs li span{flex:1 1 420px;}
+  footer .ft-refs a{flex:none;font-family:'Barlow Condensed',sans-serif;font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:15px;color:var(--navy);text-decoration:none;border:1px solid var(--lavanda);border-radius:999px;padding:3px 12px;transition:background .3s,border-color .3s;}
+  footer .ft-refs a:hover{background:#E2EDFF;border-color:var(--navy);}
+  footer .ft-note{font-size:13.5px;color:var(--muted);margin:8px 0 16px;}
+  footer .ft-mail{font-size:15px;margin:0;}
+  footer .ft-mail a{font-weight:600;}
+  .tcard .ill{display:block;width:100%;height:auto;margin:0 0 16px;border-radius:14px;background:rgba(7,26,58,.5);border:1px solid rgba(169,184,217,.18);}
+  .tcard p strong{color:var(--chiaro);}
+  .tcard .ill .lab{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:9.5px;letter-spacing:.14em;fill:#C9D3EE;}
+  .tcard .ill .inc{filter:drop-shadow(0 0 4px var(--acc));}
+  .tcard .ill .pr{opacity:0;transform-box:fill-box;transform-origin:center;animation:pr 2.4s ease-out infinite;}
+  @keyframes pr{0%{opacity:.9;transform:scale(.6);}100%{opacity:0;transform:scale(2.2);}}
+  .tcard .ill .flowl{animation:flowl 1.4s linear infinite;}
+  @keyframes flowl{to{stroke-dashoffset:-14;}}
+  .tips .slip{grid-column:1/-1;border-left:4px solid var(--navy);}
+  .slip-g{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px;}
+  .slip-g div{background:#E2EDFF;border-radius:var(--r-m);padding:14px 16px;}
+  .slip-g b{display:block;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:19px;color:var(--navy-deep);text-transform:uppercase;letter-spacing:.03em;margin-bottom:4px;}
+  .slip-g span{font-size:15.5px;color:var(--body);}
+  @media (max-width:640px){ .slip-g{grid-template-columns:1fr;} }
+  footer .mail{margin-top:4px;}
+  footer .mail a{font-weight:600;color:var(--navy);}
+  footer .mail span{color:var(--muted);font-size:14px;}
   .hud .scan-lap{opacity:0;animation:scanlap 4.5s linear infinite 2.8s;}
   @keyframes scanlap{0%{transform:translateY(-110px);opacity:0;}6%{opacity:.95;}92%{opacity:.95;}100%{transform:translateY(110px);opacity:0;}}
   .hud .hit{opacity:0;transform-box:fill-box;transform-origin:center;animation:hit 4.5s linear infinite;}
@@ -466,6 +497,7 @@
         <a class="chip" href="#trattamento">Intervento</a>
         <a class="chip" href="#faq">Domande</a>
       </div>
+      <div class="byline"><span>Testo a cura del <b>Dott. Francesco Evola</b>, chirurgo generale · Torino</span><span class="sep" aria-hidden="true">|</span><span>Revisione: ottobre 2026</span></div>
     </div>
     <div class="hud-wrap" aria-hidden="true">
       <svg class="hud" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -732,17 +764,12 @@
 <section class="s reveal" id="altre"><div class="wrap"><p class="kicker"><span class="ix">+</span><span>Altre pagine</span><span class="ln"></span></p><h2>Approfondisci</h2><div class="related stagger"><a class="rel" href="index.html"><h3>Ernia inguinale</h3><p>Rigonfiamento all'inguine: sintomi, quando preoccuparsi e le tecniche di intervento, dalla open alla robotica.</p><span class="go">Leggi la pagina <span>→</span></span></a><a class="rel" href="laparocele.html"><h3>Laparocele</h3><p>L'ernia che compare sulla cicatrice di un precedente intervento: perché si forma, come ci si prepara e come si ripara.</p><span class="go">Leggi la pagina <span>→</span></span></a></div></div></section>
 </main>
 
-<footer>
+<footer id="fonti">
   <div class="wrap">
-    <div class="sig">
-      <span class="av" aria-hidden="true">FE</span>
-      <div>
-        <p><strong>Pagina a cura del Dott. Francesco Evola</strong></p>
-        <p>Dirigente Medico dell'équipe di Chirurgia Generale e d'Urgenza, Ospedale Maria Vittoria, Torino. Si occupa di chirurgia della parete addominale.</p>
-        <p class="upd">Ultimo aggiornamento: ottobre 2026</p>
-      </div>
-    </div>
-    <p style="margin-top:18px;">Riferimento: linee guida della European Hernia Society sulla diastasi dei retti (2021); Sperstad e coll., British Journal of Sports Medicine, 2016.</p>
+    <p class="ft-h">Fonti</p>
+    <ul class="ft-refs"><li><span>Hernández-Granados P et al. European Hernia Society guidelines on management of rectus diastasis. <i>British Journal of Surgery</i>, 2021.</span> <a href="https://doi.org/10.1093/bjs/znab128" target="_blank" rel="noopener">Testo integrale <span aria-hidden="true">↗</span></a></li><li><span>Sperstad JB et al. Diastasis recti abdominis during pregnancy and 12 months after childbirth. <i>British Journal of Sports Medicine</i>, 2016.</span> <a href="https://doi.org/10.1136/bjsports-2016-096065" target="_blank" rel="noopener">Testo integrale <span aria-hidden="true">↗</span></a></li></ul>
+    <p class="ft-note">Documenti scientifici in inglese, destinati ai professionisti, consultabili e scaricabili gratuitamente.</p>
+    <p class="ft-mail">Domande o segnalazioni sui contenuti: <a href="mailto:f.evola.surg@gmail.com">f.evola.surg@gmail.com</a> (non per urgenze).</p>
     <p class="disc">Questa pagina ha finalità esclusivamente informative e divulgative. Non sostituisce la visita medica, la diagnosi o il parere del proprio medico o chirurgo.</p>
   </div>
 </footer>

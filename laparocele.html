@@ -51,7 +51,8 @@
     "@type": "Physician",
     "name": "Dott. Francesco Evola",
     "medicalSpecialty": "Surgical",
-    "description": "Dirigente Medico, Chirurgia Generale e d'Urgenza, Ospedale Maria Vittoria, Torino"
+    "description": "Dirigente Medico, Chirurgia Generale e d'Urgenza, Torino",
+    "email": "f.evola.surg@gmail.com"
   }
 }
 </script>
@@ -372,6 +373,36 @@
     .path .bar,.kicker .ln{transform:none !important;}
   }
 
+  .byline{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin-top:24px;padding-top:14px;border-top:1px solid rgba(169,184,217,.3);font-size:14.5px;color:#C9D3EE;max-width:680px;}
+  .byline b{color:#F7F9FF;font-weight:600;}
+  .byline .sep{color:#6F7FA8;}
+  @media (max-width:560px){ .byline .sep{display:none;} }
+  footer .ft-h{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:var(--navy);margin:0 0 8px;}
+  footer .ft-refs{list-style:none;margin:0;padding:0;}
+  footer .ft-refs li{padding:10px 0;border-top:1px solid var(--line);font-size:15px;color:var(--body);display:flex;flex-wrap:wrap;gap:4px 14px;justify-content:space-between;align-items:baseline;}
+  footer .ft-refs li span{flex:1 1 420px;}
+  footer .ft-refs a{flex:none;font-family:'Barlow Condensed',sans-serif;font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:15px;color:var(--navy);text-decoration:none;border:1px solid var(--lavanda);border-radius:999px;padding:3px 12px;transition:background .3s,border-color .3s;}
+  footer .ft-refs a:hover{background:#E2EDFF;border-color:var(--navy);}
+  footer .ft-note{font-size:13.5px;color:var(--muted);margin:8px 0 16px;}
+  footer .ft-mail{font-size:15px;margin:0;}
+  footer .ft-mail a{font-weight:600;}
+  .tcard .ill{display:block;width:100%;height:auto;margin:0 0 16px;border-radius:14px;background:rgba(7,26,58,.5);border:1px solid rgba(169,184,217,.18);}
+  .tcard p strong{color:var(--chiaro);}
+  .tcard .ill .lab{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:9.5px;letter-spacing:.14em;fill:#C9D3EE;}
+  .tcard .ill .inc{filter:drop-shadow(0 0 4px var(--acc));}
+  .tcard .ill .pr{opacity:0;transform-box:fill-box;transform-origin:center;animation:pr 2.4s ease-out infinite;}
+  @keyframes pr{0%{opacity:.9;transform:scale(.6);}100%{opacity:0;transform:scale(2.2);}}
+  .tcard .ill .flowl{animation:flowl 1.4s linear infinite;}
+  @keyframes flowl{to{stroke-dashoffset:-14;}}
+  .tips .slip{grid-column:1/-1;border-left:4px solid var(--navy);}
+  .slip-g{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px;}
+  .slip-g div{background:#E2EDFF;border-radius:var(--r-m);padding:14px 16px;}
+  .slip-g b{display:block;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:19px;color:var(--navy-deep);text-transform:uppercase;letter-spacing:.03em;margin-bottom:4px;}
+  .slip-g span{font-size:15.5px;color:var(--body);}
+  @media (max-width:640px){ .slip-g{grid-template-columns:1fr;} }
+  footer .mail{margin-top:4px;}
+  footer .mail a{font-weight:600;color:var(--navy);}
+  footer .mail span{color:var(--muted);font-size:14px;}
   .hud .scan-lap{opacity:0;animation:scanlap 4.5s linear infinite 2.8s;}
   @keyframes scanlap{0%{transform:translateY(-110px);opacity:0;}6%{opacity:.95;}92%{opacity:.95;}100%{transform:translateY(110px);opacity:0;}}
   .hud .hit{opacity:0;transform-box:fill-box;transform-origin:center;animation:hit 4.5s linear infinite;}
@@ -466,6 +497,7 @@
         <a class="chip" href="#trattamento">Tecniche</a>
         <a class="chip" href="#faq">Domande</a>
       </div>
+      <div class="byline"><span>Testo a cura del <b>Dott. Francesco Evola</b>, chirurgo generale · Torino</span><span class="sep" aria-hidden="true">|</span><span>Revisione: ottobre 2026</span></div>
     </div>
     <div class="hud-wrap" aria-hidden="true">
       <svg class="hud" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -520,7 +552,7 @@
         <div>
           <p class="kicker"><span class="ix">01</span><span>Definizione</span><span class="ln"></span></p>
           <h2>Cos'è un laparocele</h2>
-          <p class="lead2">Un'ernia che si forma nel punto in cui la parete dell'addome è stata aperta durante un intervento chirurgico.</p>
+          <p class="lead2">Un'ernia che si forma nel punto in cui la parete dell'addome è stata aperta durante un precedente intervento chirurgico.</p>
           <p>Dopo un'operazione, i muscoli e le fasce della parete addominale vengono richiusi e devono cicatrizzare. A volte la cicatrice profonda non diventa abbastanza robusta e si apre un <strong>difetto</strong>, cioè un'apertura nella parete muscolo-fasciale. Attraverso questo punto debole il <strong>peritoneo</strong> forma un sacco che può contenere tessuto adiposo o anse intestinali: all'esterno si manifesta come una tumefazione in corrispondenza della cicatrice.</p>
           <p>È più frequente dopo un'incisione addominale mediana (laparotomia mediana), ma può comparire anche su incisioni laterali o in corrispondenza degli accessi laparoscopici. Di solito si manifesta nei primi anni dopo l'intervento. Come tutte le ernie, <strong>non guarisce da solo</strong> e tende ad aumentare di dimensioni.</p>
         </div>
@@ -592,7 +624,7 @@
           <p class="kicker"><span class="ix">03</span><span>Diagnosi</span><span class="ln"></span></p>
           <h2>Visita e TC</h2>
           <p class="lead2">Il laparocele si riconosce alla visita, ma per programmare l'intervento serve quasi sempre una TC.</p>
-          <p>La TC mostra quanto è largo il difetto, cosa contiene il sacco e quanto della parete è ancora sano. Sono informazioni che servono a scegliere la tecnica, la dimensione della rete e capire se servono preparazioni particolari.</p>
+          <p>La TC mostra quanto è largo il difetto, cosa contiene il sacco e quanto della parete è ancora sano, e permette di identificare eventuali altri difetti fasciali non ancora evidenti clinicamente. Sono informazioni che servono a scegliere la tecnica, la dimensione della rete e capire se servono preparazioni particolari.</p>
         </div>
       </div>
       <div class="flow stagger">
@@ -660,19 +692,19 @@
           <span class="badge">Open</span>
           <h3>Riparazione aperta con rete</h3>
           <p>Si incide sulla precedente cicatrice, si ricostruisce la parete e si posiziona la rete dietro i muscoli retti.</p>
-          <ul><li>Adatta anche a difetti grandi</li><li>Se necessario, tecniche di separazione dei componenti per chiudere la parete senza tensione</li></ul>
+          <ul><li>Adatta anche a difetti grandi</li><li>Se necessario, si possono scollare o interrompere i muscoli larghi dell'addome (component separation) per chiudere la parete senza tensione</li></ul>
         </article>
         <article class="tcard c2">
           <span class="badge">Laparoscopica</span>
-          <h3>Rete dall'interno (IPOM)</h3>
-          <p>Da piccoli accessi, la rete viene fissata sulla parete dall'interno dell'addome, a contatto con l'intestino.</p>
-          <ul><li>Piccole incisioni</li><li>Riservata a casi selezionati</li></ul>
+          <h3>Rete intraperitoneale o preperitoneale</h3>
+          <p>Da piccoli accessi. La tecnica più frequente è la rete intraperitoneale (<strong>IPOM</strong>), fissata sulla parete dall'interno dell'addome. In alternativa la rete può essere posizionata nello spazio preperitoneale (<strong>ventral TAPP</strong>) o con accesso endoscopico extraperitoneale (<strong>eTEP</strong>, <strong>PeTEP</strong>).</p>
+          <ul><li>Piccole incisioni</li><li>Tecnica scelta in base a sede e dimensioni del difetto</li></ul>
         </article>
         <article class="tcard c3">
           <span class="badge">Robotica</span>
-          <h3>Rete retromuscolare mininvasiva</h3>
-          <p>Il robot permette di ricostruire la parete e posizionare la rete dietro i muscoli, come nella tecnica aperta, ma da piccoli accessi.</p>
-          <ul><li>Stessa posizione della rete raccomandata dalle linee guida</li><li>In genere meno dolore rispetto alla tecnica aperta</li></ul>
+          <h3>Ricostruzione robotica della parete</h3>
+          <p>Il robot permette di posizionare agevolmente la rete in sede <strong>retromuscolare</strong>, come nella tecnica aperta, ma anche negli altri spazi della parete, con un notevole miglioramento di precisione ed ergonomia.</p>
+          <ul><li>Posizione retromuscolare raccomandata dalle linee guida</li><li>Da piccoli accessi</li></ul>
         </article>
       </div>
       <figure class="panel figure reveal" style="margin-left:0;margin-right:0;">
@@ -722,7 +754,7 @@
       <div class="stagger">
         <details class="q"><summary>Il laparocele può guarire da solo?<span class="pm"></span></summary><div class="a"><p>No. Il difetto della parete non si richiude spontaneamente e con il tempo tende ad allargarsi. L'unica soluzione definitiva è l'intervento.</p></div></details>
         <details class="q"><summary>Bisogna operarsi sempre e subito?<span class="pm"></span></summary><div class="a"><p>No. Se il laparocele rientra bene e dà pochi disturbi, si può scegliere con il chirurgo di aspettare e controllarlo nel tempo. L'intervento si consiglia quando i sintomi peggiorano la qualità della vita e le condizioni generali lo permettono.</p></div></details>
-        <details class="q"><summary>La panciera basta?<span class="pm"></span></summary><div class="a"><p>Una fascia contenitiva può dare sollievo, ma non chiude il difetto e non impedisce all'ernia di crescere. Può essere utile nell'attesa, non come cura.</p></div></details>
+        <details class="q"><summary>Una fascia elastica contenitiva basta?<span class="pm"></span></summary><div class="a"><p>Una fascia elastica contenitiva può dare sollievo, ma non chiude il difetto e non impedisce all'ernia di crescere. Può essere utile nell'attesa, non come cura.</p></div></details>
         <details class="q"><summary>Perché devo smettere di fumare o perdere peso prima?<span class="pm"></span></summary><div class="a"><p>Fumo, peso elevato e diabete non controllato aumentano il rischio di infezioni della ferita e di ritorno dell'ernia. Correggerli prima dell'intervento migliora in modo concreto il risultato.</p></div></details>
         <details class="q"><summary>Il laparocele può ritornare dopo l'intervento?<span class="pm"></span></summary><div class="a"><p>Sì, il rischio di recidiva è più alto rispetto all'ernia inguinale. Si riduce con l'uso della rete nella posizione corretta, con una buona preparazione e rispettando i tempi di convalescenza.</p></div></details>
         <details class="q"><summary>Quanto dura il ricovero?<span class="pm"></span></summary><div class="a"><p>Dipende dalla dimensione del laparocele e dalla tecnica: da una notte per i casi piccoli fino a diversi giorni per le ricostruzioni più ampie.</p></div></details>
@@ -749,17 +781,12 @@
 <section class="s reveal" id="altre"><div class="wrap"><p class="kicker"><span class="ix">+</span><span>Altre pagine</span><span class="ln"></span></p><h2>Approfondisci</h2><div class="related stagger"><a class="rel" href="index.html"><h3>Ernia inguinale</h3><p>Rigonfiamento all'inguine: sintomi, quando preoccuparsi e le tecniche di intervento, dalla open alla robotica.</p><span class="go">Leggi la pagina <span>→</span></span></a><a class="rel" href="diastasi-retti.html"><h3>Diastasi dei retti</h3><p>Separazione dei muscoli retti dell'addome dopo la gravidanza o con il sovrappeso: cos'è, fisioterapia e quando operare.</p><span class="go">Leggi la pagina <span>→</span></span></a></div></div></section>
 </main>
 
-<footer>
+<footer id="fonti">
   <div class="wrap">
-    <div class="sig">
-      <span class="av" aria-hidden="true">FE</span>
-      <div>
-        <p><strong>Pagina a cura del Dott. Francesco Evola</strong></p>
-        <p>Dirigente Medico dell'équipe di Chirurgia Generale e d'Urgenza, Ospedale Maria Vittoria, Torino. Si occupa di chirurgia della parete addominale.</p>
-        <p class="upd">Ultimo aggiornamento: ottobre 2026</p>
-      </div>
-    </div>
-    <p style="margin-top:18px;">Riferimento: linee guida della European Hernia Society sul laparocele della linea mediana (2023).</p>
+    <p class="ft-h">Fonti</p>
+    <ul class="ft-refs"><li><span>Sanders DL et al. Midline incisional hernia guidelines: the European Hernia Society. <i>British Journal of Surgery</i>, 2023.</span> <a href="https://doi.org/10.1093/bjs/znad284" target="_blank" rel="noopener">Testo integrale <span aria-hidden="true">↗</span></a></li></ul>
+    <p class="ft-note">Documenti scientifici in inglese, destinati ai professionisti, consultabili e scaricabili gratuitamente.</p>
+    <p class="ft-mail">Domande o segnalazioni sui contenuti: <a href="mailto:f.evola.surg@gmail.com">f.evola.surg@gmail.com</a> (non per urgenze).</p>
     <p class="disc">Questa pagina ha finalità esclusivamente informative e divulgative. Non sostituisce la visita medica, la diagnosi o il parere del proprio medico o chirurgo.</p>
   </div>
 </footer>
